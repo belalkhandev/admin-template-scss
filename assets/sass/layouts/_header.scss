@@ -1,0 +1,46 @@
+.header {
+    background-color: $color_white;
+    border-bottom: 1px solid $color_light_gray;
+    @include dflex;
+    min-height: 50px;
+  
+    .header-left {
+        padding: 0px 10px;
+        width: $nav_size;
+        @include dflex;
+        
+        .logo {
+            h2 {
+                font-size: 20px;
+                color: $color_secondary;
+
+                span {
+                    color: $color_primary;
+                }
+            }
+        }
+
+        i.bx {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+  
+    .header-right {
+        padding: 0px 10px;
+        width: $content_size;
+        @include dflex;
+  
+        .header-nav {
+            @include dflex;
+
+            ul {
+                @include dflex;
+            }
+        }
+  
+        .header-user {
+            
+        }
+    }
+}
