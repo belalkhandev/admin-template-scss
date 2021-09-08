@@ -5,7 +5,7 @@
 
         $(document).on('click', '#nav-control', function() {
             $('main').toggleClass('mini-nav');
-        })
+        });
         
     });
 

@@ -36,6 +36,24 @@
 
             ul {
                 @include dflex;
+                list-style: none;
+
+                li {
+                    margin-right: 5px;
+                    a {
+                        color: $color_secondary;
+                        padding: 0px 5px;
+
+                        i {
+                            color: $color_primary;
+                        }
+
+                        &:hover {
+                            color: $color_primary;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
   
