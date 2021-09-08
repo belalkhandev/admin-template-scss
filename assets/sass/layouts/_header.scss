@@ -1,5 +1,5 @@
 .header {
-    background-color: $color_white;
+    background-color: $color_primary;
     border-bottom: 1px solid $color_light_gray;
     @include dflex;
     min-height: 50px;
@@ -12,10 +12,10 @@
         .logo {
             h2 {
                 font-size: 20px;
-                color: $color_secondary;
+                color: $color_white;
 
                 span {
-                    color: $color_primary;
+                    color: $color_white;
                 }
             }
         }
@@ -23,6 +23,7 @@
         i.bx {
             font-size: 20px;
             cursor: pointer;
+            color: $color_white
         }
     }
   
@@ -41,15 +42,15 @@
                 li {
                     margin-right: 5px;
                     a {
-                        color: $color_secondary;
+                        color: $color_white;
                         padding: 0px 5px;
 
                         i {
-                            color: $color_primary;
+                            color: $color_warning;
                         }
 
                         &:hover {
-                            color: $color_primary;
+                            color: $color_white;
                             text-decoration: none;
                         }
                     }
@@ -58,7 +59,9 @@
         }
   
         .header-user {
-            
+            a {
+                color: $color_white;
+            }
         }
     }
 }

@@ -393,7 +393,7 @@ table, .table {
 }
 
 table thead tr th, .table thead tr th {
-  padding: 5px 10px;
+  padding: 10px;
   font-weight: 500;
   font-size: 13px;
   border-bottom: 1px solid #f3f3f3 !important;
@@ -427,7 +427,7 @@ table tbody tr td, .table tbody tr td {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: #0887ed;
   border-bottom: 1px solid #f3f3f3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,16 +469,17 @@ table tbody tr td, .table tbody tr td {
 
 .header .header-left .logo h2 {
   font-size: 20px;
-  color: #1a2b48;
+  color: #ffffff;
 }
 
 .header .header-left .logo h2 span {
-  color: #0887ed;
+  color: #ffffff;
 }
 
 .header .header-left i.bx {
   font-size: 20px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .header .header-right {
@@ -543,17 +544,21 @@ table tbody tr td, .table tbody tr td {
 }
 
 .header .header-right .header-nav ul li a {
-  color: #1a2b48;
+  color: #ffffff;
   padding: 0px 5px;
 }
 
 .header .header-right .header-nav ul li a i {
-  color: #0887ed;
+  color: #FFC800;
 }
 
 .header .header-right .header-nav ul li a:hover {
-  color: #0887ed;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.header .header-right .header-user a {
+  color: #ffffff;
 }
 
 main {
@@ -658,6 +663,10 @@ main .main-navigation .navigation li.treeview.nav-open::after {
   color: #0887ed;
 }
 
+main .main-navigation .navigation li.active a {
+  color: #0887ed;
+}
+
 main .main-content {
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -665,7 +674,7 @@ main .main-content {
 }
 
 main .main-content .content {
-  padding: 10px;
+  padding: 15px;
 }
 
 main.mini-nav .main-navigation {
