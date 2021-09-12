@@ -5,6 +5,7 @@
 
         $(document).on('click', '#nav-control', function() {
             $('main').toggleClass('mini-nav');
+            console.log($('#nav-control').html());
         });
 
         //active navigation class

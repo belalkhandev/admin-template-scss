@@ -426,6 +426,65 @@ table tbody tr td, .table tbody tr td {
   padding: 1px 5px;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 5px;
+}
+
+.pagination ul li a {
+  display: block;
+  border: 1px solid #f3f3f3;
+  padding: 3px 10px;
+  color: #1a2b48;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.pagination ul li:hover a {
+  background-color: #f3f3f3;
+}
+
+.pagination ul li.page-first a, .pagination ul li.page-last a {
+  color: #0887ed;
+}
+
+.pagination ul li.active a {
+  background-color: #0887ed;
+  color: #ffffff;
+  border-color: #0887ed;
+}
+
+.pagination ul li.disable-link a {
+  color: #c4c7c9;
+  cursor: no-drop;
+}
+
 .header {
   background-color: #0887ed;
   border-bottom: 1px solid #f3f3f3;
@@ -575,7 +634,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 100vh;
-  background-color: #F9FCFE;
+  background-color: #f2f3f9;
 }
 
 main .main-navigation {
@@ -678,18 +737,22 @@ main .main-content .content {
 }
 
 main.mini-nav .main-navigation {
-  width: 50px;
+  width: 40px;
 }
 
-main.mini-nav .main-navigation ul li a .nav-text {
+main.mini-nav .main-navigation ul li a span {
   display: none;
 }
 
-main.mini-nav .main-navigation ul li .nav-dropdown {
+main.mini-nav .main-navigation ul li .treeview-menu {
+  display: none !important;
+}
+
+main.mini-nav .main-navigation ul li::after {
   display: none;
 }
 
 main.mini-nav .main-content {
-  width: calc(100% - 50px);
+  width: calc(100% - 40px);
 }
 /*# sourceMappingURL=style.css.map */

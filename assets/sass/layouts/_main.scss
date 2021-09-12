@@ -4,7 +4,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: #F9FCFE;
+    background-color: #f2f3f9;
 
     .main-navigation {
         border-right: 1px solid $color_light_gray;
@@ -110,17 +110,20 @@ main {
 
     &.mini-nav {
         .main-navigation{
-            width: 50px;
+            width: 40px;
 
             ul {
                 li {
                     a {
-                        .nav-text {
+                        span {
                             display: none;
                         }
                     }
 
-                    .nav-dropdown {
+                    .treeview-menu {
+                        display: none !important;
+                    }
+                    &::after {
                         display: none;
                     }
                 }
@@ -128,7 +131,7 @@ main {
         }
     
         .main-content {
-            width: calc(100% - 50px);
+            width: calc(100% - 40px);
         }
     }
 }

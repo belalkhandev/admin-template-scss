@@ -1,0 +1,46 @@
+.pagination {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    ul {
+        @include dflex;
+        grid-gap: 5px;
+        li {
+            a {
+                display: block;
+                border: 1px solid $color_light_gray;
+                padding: 3px 10px;
+                color: $color_secondary;
+                font-size: 13px;
+                text-decoration: none;
+            }
+
+            &:hover {
+                a {
+                    background-color: $color_light_gray;
+                }
+            }
+
+            &.page-first, &.page-last {
+                a {
+                    color: $color_primary;
+                }
+            }
+
+            &.active {
+                a {
+                    background-color: $color_primary;
+                    color: $color_white;
+                    border-color: $color_primary;
+                }
+            }
+
+            &.disable-link {
+                a {
+                    color: $color_gray;
+                    cursor: no-drop;
+                }
+            }
+        }
+    }
+}
