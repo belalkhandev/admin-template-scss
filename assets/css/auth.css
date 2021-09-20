@@ -170,11 +170,14 @@ h6 {
 }
 
 .auth-box {
-  width: 450px;
   -webkit-box-shadow: 0px 0px 25px #00000008;
           box-shadow: 0px 0px 25px #00000008;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.auth-box.login-box {
+  width: 450px;
 }
 
 .auth-box .auth-box-header {
@@ -231,6 +234,10 @@ h6 {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: #0887ed;
+}
+
+.form-group.has-error .form-control {
+  border-color: #df1c3d;
 }
 
 .form-group .input-group {

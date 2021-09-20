@@ -16,7 +16,10 @@
 }
 
 .auth-box {
-    width: 450px;
+    &.login-box {
+        width: 450px;
+    }
+
     box-shadow: 0px 0px 25px #00000008;
     border-radius: 5px;
 
@@ -61,6 +64,12 @@
         &:focus {
             box-shadow: none;
             border-color: $color_primary;
+        }
+    }
+
+    &.has-error {
+        .form-control {
+            border-color: $color_danger;
         }
     }
 
