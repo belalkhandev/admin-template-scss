@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+//Abstracts
+@import "abstracts/__abstracts-dir";
+
+//Base Styles
+@import "base/__base-dir";
+
+// main style
+.auth-wrapper {
+    background-color: $color_light_gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    width: 450px;
+    box-shadow: 0px 0px 25px #00000008;
+    border-radius: 5px;
+
+    background-color: $color_white;
+    
+    .auth-box-header {
+        text-align: center;
+        padding: 30px 0px;
+        color: $color_secondary;
+
+        .auth-box-title {
+            font-size: 24px;
+        }
+    }
+
+    .auth-box-body {
+        padding: 15px;
+        background-color: $color_white;
+    }
+
+    .auth-box-footer {
+        min-height: 25px;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+    label {
+        font-weight: 500;
+        color: $color_secondary
+    }
+
+    .form-control {
+        box-shadow: none;
+        border-radius: 5px;
+
+        &::placeholder {
+            font-weight: 300;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: $color_primary;
+        }
+    }
+
+    .input-group  {
+        position: relative;
+
+        .input-group-icon {
+            position: absolute;
+            top: 50%;
+            left: 8px;
+            z-index: 999;
+            transform: translate(0%, -50%);
+            font-size: 20px;
+            color: $color_gray;
+        }
+
+        .form-control {
+            padding-left: 35px;
+            border-radius: 5px !important;
+        }
+    }
+    
+}
+
+.form-submit {
+    margin-top: 15px;
+    .submit-btn {
+        background-color: $color_primary;
+        border: none;
+        color: $color_white;
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 5px;
+    }
+}
