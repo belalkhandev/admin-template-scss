@@ -21,6 +21,15 @@
                 $this.closest('li').addClass('active');
             }
         });
+
+        //bootstrap datepicker
+        if ($('.bs-datepicker').length > 0) {
+            $('.bs-datepicker').datepicker({
+                todayHighlight: true,
+                format: "yyyy-mm-dd",
+                autoclose: true
+            });
+        }
         
     });
 

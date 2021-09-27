@@ -1,6 +1,5 @@
 .header {
     background-color: $color_primary;
-    border-bottom: 1px solid $color_light_gray;
     @include dflex;
     min-height: 50px;
   

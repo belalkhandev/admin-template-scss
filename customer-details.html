@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM | E-Cashier, A Point of Sale (POS system)</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <!-- vendor stylesheet -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- main styles-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <h2>CRM <span>eCashier</span></h2>
+                </div>
+                <span id="nav-control"><i class="bx bx-arrow-from-right"></i></span>
+            </div>
+            <div class="header-right">
+                <div class="header-nav">
+                    <span>Quick Links: </span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-user-account"></i>
+                                <span>Today's Subscription</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-bell"></i>
+                                <span>Notification</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-offer"></i>
+                                <span>Make Package Offer</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-user">
+                    <ul>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <nav class="main-navigation">
+            <ul class="navigation" data-widget="tree">
+                <li>
+                    <a href="index.html">
+                        <i class="bx bx-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="bx bxs-user-account"></i>
+                        <span>Today's Subscription</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-user"></i>
+                        <span>Subscriptions Manage</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#">
+                                <i class="bx bx-user"></i>
+                                <span>Paid Subscribers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bx-user"></i>
+                                <span>Non-paid subscribers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-bell"></i>
+                        <span>Notification</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#">
+                                <i class="bx bx-bell"></i>
+                                <span>New notification</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bx-bell"></i>
+                                <span>All Notification</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-package"></i>
+                        <span>Packages</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="#">
+                                <i class="bx bx-package"></i>
+                                <span>All Packages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-offer"></i>
+                                <span>Create Package Offer</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- main content -->
+        <section class="main-content">
+            <div class="content">
+
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h5 class="box-title">Customer Details</h5>
+                    </div>
+                    <div class="box-body">
+                        <div class="user-details">
+                            <div class="user-details-left">
+                                <div class="user-personal mb-15">
+                                    <img src="assets/images/user.png" alt="">                                    
+                                    <h3>User name</h3>
+                                    <p>
+                                        <i class="bx bx-phone"></i>
+                                        <a href="tel:01798673163">01798673163</a>
+                                    </p>
+                                    <p>
+                                        <i class="bx bx-envelope"></i>
+                                        <a href="mailto:belalkhan.dev@gmail.com">belalkhan.dev@gmail.com</a>
+                                    </p>
+                                </div>
+                                <h5 class="user-details-section-title">Active Package</h5>
+                                <div class="user-package mb-15">
+                                    <table class="no-border">
+                                        <tr>
+                                            <th>Status</th>
+                                            <td>
+                                                <button class="btn btn-success btn-sm">Active</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Package</th>
+                                            <td>Basic</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Package Length</th>
+                                            <td>One month</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Days left</th>
+                                            <td>10 Day</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <h5 class="user-details-section-title">Business Information</h5>
+                                <div class="user-subscription mb-15">
+                                    <div class="info">
+                                        <strong>Business name</strong>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="info">
+                                        <strong>Business Address</strong>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="info">
+                                        <strong>Business Type</strong>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="user-details-right">
+                                <div class="user-widgets">
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                    <div class="user-widget">
+                                        <div class="user-widget-icon">
+                                            <i class="bx bx-cog"></i>
+                                        </div>
+                                        <div class="user-widget-content">
+                                            <p>Total Customer</p>
+                                            <h2>1534</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-subscriptions">
+                                    <h3>Subscriptions History</h3>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Package</th>
+                                                <th>Length</th>
+                                                <th>Subscription Date</th>
+                                                <th>Expire Date</th>
+                                                <th>Days Left</th>
+                                                <th>Paid</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- form -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
+
+    <!-- scripts -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/fontawesome/js/all.min.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

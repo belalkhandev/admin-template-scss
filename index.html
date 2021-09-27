@@ -148,7 +148,7 @@
                     <div class="box-header with-border with-action">
                         <h5 class="box-title">Dashboard</h5>
                         <div class="action">
-                            <a href="" class="mr-10"><i class="bx bx-filter"></i> Filter</a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#filterModal" class="mr-10"><i class="bx bx-filter"></i> Filter</button>
                             <a href=""><i class="bx bx-dots-horizontal"></i></a>
                         </div>
                     </div>
@@ -204,8 +204,205 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="filterModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Filter</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <form action="">
+                                
+                            <div class="modal-body">
+                                <h3 class="form-section-title">Package</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Subscription From Date</label>
+                                            <input type="text" name="from_date" class="form-control bs-datepicker" placeholder="yyyy-mm-dd" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Subscription To Date</label>
+                                            <input type="text" name="to_date" class="form-control bs-datepicker" placeholder="yyyy-mm-dd" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="form-section-title">Package</h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="package-input">
+                                            <label>
+                                                <input type="checkbox" value="trial" name="package[]">
+                                                Trial
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="package-input">
+                                            <label>
+                                                <input type="checkbox" value="basic" name="package[]">
+                                                Basic
+                                            </label>
+                                        </div>
+                                        <div class="package-categories">
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    3 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    6 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Year
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="package-input">
+                                            <label>
+                                                <input type="checkbox" value="standard" name="package[]">
+                                                Standard
+                                            </label>
+                                        </div>
+                                        <div class="package-categories">
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    3 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    6 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Year
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="package-input">
+                                            <label>
+                                                <input type="checkbox" value="super" name="package[]">
+                                                Super
+                                            </label>
+                                        </div>
+                                        <div class="package-categories">
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    3 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    6 Month
+                                                </label>
+                                            </div>
+                                            <div class="package-category-input">
+                                                <label>
+                                                    <input type="checkbox" value="basic_30" name="package[]">
+                                                    1 Year
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Form Element</h5>
+                            </div>
+                            <div class="box-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">Name</label>
+                                        <input type="text" name="name" id="" placeholder="Enter name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="email" name="name" id="" placeholder="Enter email" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="box-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h5 class="box-title">Form Element</h5>
+                            </div>
+                            <div class="box-body">
+                                <form action="">
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-4 col-form-label">Name</label>
+                                        <div class="col-md-8">
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-4 col-form-label">Email</label>
+                                        <div class="col-md-8">
+                                            <input type="text" name="" id="" placeholder="Enter email" class="form-control">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="box-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
         </section>
+
+        <!-- form -->
     </main>
 
     <!-- footer -->
