@@ -19,7 +19,7 @@ ul, ol {
 }
 
 a {
-  color: #0887ed;
+  color: #db0606;
   text-decoration: none;
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -27,7 +27,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #0d73c7;
+  color: #c40c0c;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: #1a2b48;
+  color: #002339;
 }
 
 img {
@@ -83,37 +83,37 @@ input[type=number] {
 h1 {
   font-size: 30px;
   font-weight: 700;
-  color: #1a2b48;
+  color: #002339;
 }
 
 h2 {
   font-size: 25px;
   font-weight: 600;
-  color: #1a2b48;
+  color: #002339;
 }
 
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #1a2b48;
+  color: #002339;
 }
 
 h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #1a2b48;
+  color: #002339;
 }
 
 h5 {
   font-size: 16px;
   font-weight: 600;
-  color: #1a2b48;
+  color: #002339;
 }
 
 h6 {
   font-size: 14px;
   font-weight: 600;
-  color: #1a2b48;
+  color: #002339;
 }
 
 .dflex-end-center {
@@ -166,12 +166,12 @@ h6 {
 }
 
 .btn-primary {
-  background-color: #0887ed;
+  background-color: #db0606;
   color: #ffffff;
 }
 
 .btn-secondary {
-  background-color: #1a2b48;
+  background-color: #002339;
   color: #ffffff;
 }
 
@@ -202,7 +202,7 @@ h6 {
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: #0887ed;
+  background-color: #db0606;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
@@ -281,7 +281,7 @@ form .form-group {
 
 form .form-group label {
   font-weight: 400;
-  color: #1a2b48;
+  color: #002339;
   margin-bottom: 5px;
 }
 
@@ -296,7 +296,7 @@ form .form-group .form-control {
 form .form-group .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #0887ed;
+  border-color: #002339;
 }
 
 form .form-group .form-control::-webkit-input-placeholder {
@@ -331,7 +331,7 @@ form .form-section-title {
 }
 
 .datepicker .datepicker-days .datepicker-title {
-  color: #0887ed;
+  color: #db0606;
 }
 
 .datepicker .datepicker-days .prev, .datepicker .datepicker-days .next {
@@ -339,13 +339,13 @@ form .form-section-title {
 }
 
 .datepicker .datepicker-days .datepicker-switch {
-  color: #0887ed;
+  color: #db0606;
 }
 
 .datepicker .datepicker-days .dow {
   padding: 5px 7px;
   font-weight: 500;
-  color: #1a2b48;
+  color: #002339;
   border-radius: 0px !important;
 }
 
@@ -359,7 +359,7 @@ form .form-section-title {
 }
 
 .datepicker .datepicker-days .day.today {
-  background: #1a2b48 !important;
+  background: #002339 !important;
   color: #fff !important;
 }
 
@@ -369,7 +369,7 @@ form .form-section-title {
 }
 
 .datepicker .datepicker-days .day.active {
-  background: #0887ed !important;
+  background: #db0606 !important;
 }
 
 .datepicker .datepicker-days .day.new {
@@ -384,6 +384,11 @@ form .form-section-title {
   -webkit-box-shadow: 0px 0px 2px 0px #00000005;
           box-shadow: 0px 0px 2px 0px #00000005;
   margin-bottom: 30px;
+  border-top: 3px solid #002339;
+}
+
+.box:nth-child(even) {
+  border-top: 3px solid #db0606;
 }
 
 .box .box-header {
@@ -513,7 +518,7 @@ table tbody tr td, .table tbody tr td {
   display: block;
   border: 1px solid #f3f3f3;
   padding: 3px 10px;
-  color: #1a2b48;
+  color: #002339;
   font-size: 13px;
   text-decoration: none;
 }
@@ -523,13 +528,13 @@ table tbody tr td, .table tbody tr td {
 }
 
 .pagination ul li.page-first a, .pagination ul li.page-last a {
-  color: #0887ed;
+  color: #db0606;
 }
 
 .pagination ul li.active a {
-  background-color: #0887ed;
+  background-color: #db0606;
   color: #ffffff;
-  border-color: #0887ed;
+  border-color: #db0606;
 }
 
 .pagination ul li.disable-link a {
@@ -538,7 +543,7 @@ table tbody tr td, .table tbody tr td {
 }
 
 .header {
-  background-color: #0887ed;
+  background-color: #db0606;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +664,7 @@ table tbody tr td, .table tbody tr td {
 }
 
 .header .header-right .header-nav ul li a i {
-  color: #FFC800;
+  color: #ffffff;
 }
 
 .header .header-right .header-nav ul li a:hover {
@@ -690,7 +695,7 @@ main {
 
 main .main-navigation {
   border-right: 1px solid #f3f3f3;
-  background: #1a2b48;
+  background: #002339;
   width: 250px;
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -716,6 +721,20 @@ main .main-navigation .navigation li a {
   text-transform: capitalize;
   text-decoration: none;
   padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+}
+
+main .main-navigation .navigation li a i.bx {
+  font-size: 18px;
 }
 
 main .main-navigation .navigation li a:hover {
@@ -769,12 +788,16 @@ main .main-navigation .navigation li.treeview .treeview-menu li a:hover {
   color: #ffffff;
 }
 
+main .main-navigation .navigation li.treeview .treeview-menu li a i.bx {
+  font-size: 16px;
+}
+
 main .main-navigation .navigation li.treeview .treeview-menu li.active a {
-  color: #FFC800;
+  color: #db0606;
 }
 
 main .main-navigation .navigation li.treeview.nav-open a {
-  color: #FFC800;
+  color: #db0606;
 }
 
 main .main-navigation .navigation li.treeview.nav-open::after {
@@ -782,11 +805,11 @@ main .main-navigation .navigation li.treeview.nav-open::after {
           transform: rotate(180deg);
   -webkit-transition: 200ms;
   transition: 200ms;
-  color: #FFC800;
+  color: #db0606;
 }
 
 main .main-navigation .navigation li.active a {
-  color: #FFC800;
+  color: #db0606;
 }
 
 main .main-content {
@@ -826,7 +849,7 @@ main.mini-nav .main-content {
 .package-input label {
   font-weight: 500;
   cursor: pointer;
-  color: #1a2b48;
+  color: #002339;
 }
 
 .package-categories {
